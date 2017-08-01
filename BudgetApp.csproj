@@ -16,6 +16,9 @@
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.8-dmr" />
   </ItemGroup>
   <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0-preview2-final" />
+  </ItemGroup>
+  <ItemGroup>
     <!-- Files not to show in IDE -->
     <None Remove="yarn.lock" />
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
