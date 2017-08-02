@@ -1,10 +1,15 @@
 using budget_app.Models;
 using Microsoft.EntityFrameworkCore;
+using MySQL.Data.EntityFrameworkCore.Extensions;
 
 namespace budget_app.DAL
 {
     public class BudgetDbContext : DbContext
     {
+        // public BudgetDbContext(DbContextOptions<BudgetDbContext> options) : base(options)
+        // {           
+        // }
+
         public DbSet<User> Users { get; set; }
 
         public DbSet<Envelope> Envelopes { get; set; }
@@ -12,6 +17,10 @@ namespace budget_app.DAL
         public DbSet<Transaction> Transactions { get; set; }
 
         public DbSet<Account> Accounts { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            => optionsBuilder
+                .UseMySQL(@"server=localhost;userid=budgetapp;password=testing123;database=budgetapp;");
 
         protected override void OnModelCreating(ModelBuilder builder) 
         {            

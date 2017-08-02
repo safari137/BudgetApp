@@ -5,9 +5,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace budget_app.Controllers
 {
+    [Route("api/accounts")]
     public class AccountsController : Controller
     {
-        private BudgetDbContext _context = new BudgetDbContext();
+        private BudgetDbContext _context;
+
+        public AccountsController(BudgetDbContext context)
+        {
+            this._context = context;
+        }
 
         [HttpGet]
         public IActionResult GetAccounts()

@@ -5,14 +5,14 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="1.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0-preview2-final" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0-preview2-final" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.0-preview2-final" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.0-preview2-final" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0-preview2-final" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0-preview2-final" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0-preview2-final" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.0.0-preview2-final" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.8-dmr" />
   </ItemGroup>
   <ItemGroup>
